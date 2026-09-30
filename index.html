@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>猫咪叫声翻译器 · 猫语 → 人话</title>
+<style>
+  :root { --bg:#FFF7EE; --ink:#2E2320; --muted:#8A7A72; --accent:#FF7A45; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+         line-height: 1.7; }
+  .wrap { max-width: 800px; margin: 0 auto; padding: 48px 20px 72px; }
+  .logo { font-size: 56px; text-align: center; }
+  h1 { text-align: center; font-size: 32px; margin: 8px 0 4px; }
+  .sub { text-align: center; color: var(--muted); margin: 0 0 28px; }
+  .card { background: #fff; border: 1px solid #F1E3D5; border-radius: 20px;
+          padding: 22px 24px; margin-bottom: 18px;
+          box-shadow: 0 8px 28px rgba(46,35,32,.06); }
+  h2 { font-size: 17px; margin: 0 0 10px; }
+  ul { margin: 0; padding-left: 20px; }
+  li { margin: 6px 0; font-size: 15px; color: #4A3E3A; }
+  .btns { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;
+          margin: 26px 0; }
+  .btn { display: inline-block; padding: 13px 26px; border-radius: 999px;
+         font-size: 16px; font-weight: 600; text-decoration: none; }
+  .btn.primary { background: var(--accent); color: #fff;
+                 box-shadow: 0 6px 18px rgba(255,122,69,.35); }
+  .btn.ghost { background: #fff; color: var(--ink); border: 1.5px solid #EAD9C8; }
+  .shot { width: 100%; border-radius: 16px; border: 1px solid #F1E3D5;
+          display: block; }
+  .shot-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+              gap: 14px; }
+  .note { font-size: 13px; color: var(--muted); text-align: center; }
+  a { color: #C4551F; }
+  footer { text-align: center; font-size: 13px; color: var(--muted);
+           margin-top: 34px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo">🐱</div>
+  <h1>猫咪叫声翻译器</h1>
+  <p class="sub">听懂主子的每一句话 · 猫语 → 人话 · 完全离线</p>
+
+  <div class="btns">
+    <a class="btn primary" href="meow-translator.apk" download>⬇ 下载 APK（1.4 MB）</a>
+    <a class="btn ghost" href="privacy.html">隐私政策</a>
+    <a class="btn ghost" href="https://github.com/439436269-ctrl/meow-translator"
+       target="_blank">GitHub 仓库</a>
+  </div>
+
+  <div class="card">
+    <h2>它能做什么</h2>
+    <ul>
+      <li><strong>🎤 听叫声翻译</strong>：录一段猫叫，实时分析音高、时长、语调、响度，
+          翻译成拟人台词，并告诉你"为什么这么翻"</li>
+      <li><strong>🐾 手动状态翻译</strong>：点一下"饿了 / 生气 / 求摸摸"，
+          直接回放对应情绪的真实猫叫 + 人话释义</li>
+      <li><strong>🔮 样例识别</strong>：没带猫也能玩——内置真实猫叫样例直接送入分析管线</li>
+      <li><strong>🐱 情绪回放</strong>：翻译结果一键试听同类猫叫（9 类情绪片段库）</li>
+      <li><strong>🔒 隐私优先</strong>：无 INTERNET 权限，录音不落盘、不上传，记录只存本地</li>
+    </ul>
+  </div>
+
+  <div class="card shot-row">
+    <img class="shot" src="assets/screenshot-01.png" alt="应用截图：听叫声页">
+    <img class="shot" src="assets/screenshot-04.png" alt="应用截图：翻译结果">
+  </div>
+
+  <p class="note">系统要求 Android 7.0（API 24）及以上 · 安装包已签名，
+     升级请使用同一来源以免签名不一致</p>
+
+  <footer>
+    隐私政策见 <a href="privacy.html">privacy.html</a> ·
+    演示音频素材版权见政策第三节 · © 2026
+  </footer>
+</div>
+</body>
+</html>

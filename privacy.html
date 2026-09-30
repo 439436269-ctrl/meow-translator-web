@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 · 猫咪叫声翻译器</title>
+<style>
+  body { margin: 0; background: #FFF7EE; color: #2E2320;
+         font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+         line-height: 1.75; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 20px 64px; }
+  h1 { font-size: 26px; margin: 0 0 6px; }
+  .meta { color: #8A7A72; font-size: 13px; margin-bottom: 28px; }
+  h2 { font-size: 18px; margin: 30px 0 8px; padding-left: 10px;
+       border-left: 4px solid #FF7A45; }
+  p, li { font-size: 15px; color: #4A3E3A; }
+  ul { padding-left: 22px; }
+  .tag { display: inline-block; background: #FFE9DE; color: #C4551F;
+         border-radius: 999px; padding: 2px 12px; font-size: 13px;
+         font-weight: 600; margin-left: 8px; vertical-align: middle; }
+  code { background: #F6E9DC; border-radius: 4px; padding: 1px 6px;
+         font-size: 13px; }
+  a { color: #C4551F; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>猫咪叫声翻译器<span class="tag">隐私政策</span></h1>
+  <p class="meta">生效日期：2026 年 9 月 30 日 · 适用版本：Android 1.0（com.meow.translator）</p>
+
+  <p>猫咪叫声翻译器（以下简称"本应用"）是一款<strong>以本地处理为核心</strong>的趣味工具。
+  本政策用平实的语言说明本应用如何处理信息，请放心阅读——结论先行：
+  <strong>本应用不收集、不上传任何个人信息，不保存任何录音。</strong></p>
+
+  <h2>一、我们申请的权限及用途</h2>
+  <ul>
+    <li><strong>麦克风（RECORD_AUDIO）</strong>：用于实时识别猫咪叫声。你点击录音后，
+    音频仅在设备内存中即时分析（音高、时长、语调、响度等特征），分析完成后立即释放，
+    <strong>不会录制保存、不会上传、不会离开你的设备</strong>。</li>
+    <li><strong>修改音频设置（MODIFY_AUDIO_SETTINGS）</strong>：用于朗读翻译结果与播放猫叫样例时的音频输出，
+    不涉及任何数据采集。</li>
+  </ul>
+  <p>本应用<strong>不申请 INTERNET 联网权限</strong>（可在应用权限详情中核验），
+  具备联网类权限的系统组件亦不代表本应用会进行网络传输。</p>
+
+  <h2>二、本地存储与导出</h2>
+  <ul>
+    <li>翻译记录（情绪标签、翻译台词、声音特征数值）保存在设备本地
+    （WebView localStorage），<strong>仅存于你的手机</strong>，卸载应用即删除。</li>
+    <li>你可在应用内逐条删除或一键清空记录。</li>
+    <li>你可主动点击"导出 meow-log.json"生成文件；导出文件由你自行保管与处置，
+    本应用不会自动发送该文件。</li>
+    <li>可选的云同步（如写入你自己的飞书多维表格）完全由你在电脑端手动触发，
+    数据进入的是你自己的账号空间，与本应用开发方无关。</li>
+  </ul>
+
+  <h2>三、内置演示素材说明</h2>
+  <p>应用内置的猫叫样例片段剪辑自 B 站创作者<strong>"瓜哥-喵语十级"</strong>
+  公开发布的视频，仅用于离线功能演示，音频随应用离线分发、不用于其他用途，
+  <strong>版权归原作者所有</strong>。如权利人认为不妥，请通过下方联系方式联系，
+  我们将尽快下架处理。</p>
+
+  <h2>四、第三方 SDK 与广告</h2>
+  <p>本应用<strong>不含任何第三方 SDK</strong>：无广告、无统计分析、无消息推送、
+  无社交分享组件。语音朗读使用的是手机系统自带的文字转语音引擎（如小爱语音、讯飞），
+  其调用受系统服务自身隐私条款约束，本应用不向其传递除待朗读文字以外的数据。</p>
+
+  <h2>五、儿童与青少年</h2>
+  <p>本应用不面向 14 周岁以下儿童收集信息——事实上本应用不收集任何人的信息。
+  若监护人发现儿童在使用中产生了本地记录，可按上文方式随时清空。</p>
+
+  <h2>六、政策更新</h2>
+  <p>若未来功能发生变化导致本政策调整，将以新版本应用内提示 + 本页面更新日期为准，
+  重大变更会显著告知。</p>
+
+  <h2>七、联系我们</h2>
+  <p>任何疑问、意见或侵权主张，欢迎在项目仓库提交 Issue：
+  <a href="https://github.com/439436269-ctrl/meow-translator/issues"
+     target="_blank">github.com/439436269-ctrl/meow-translator/issues</a>，
+  我们会在 7 个工作日内回复。</p>
+</div>
+</body>
+</html>
